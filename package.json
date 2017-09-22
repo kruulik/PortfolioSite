@@ -1,0 +1,25 @@
+{
+  "name": "portfolio_site",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kruulik/PortfolioSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kruulik/PortfolioSite/issues"
+  },
+  "homepage": "https://github.com/kruulik/PortfolioSite#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0"
+  }
+}

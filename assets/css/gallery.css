@@ -1,0 +1,49 @@
+.gallery-container {
+
+}
+
+.portfolio-container {
+
+}
+
+.gallery-container .mix {
+  flex-shrink: 0;
+  margin: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 4% 40px 4%;
+}
+
+.mix {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mix img{
+  height: 100%;
+  width: 360px;
+  border: 1px solid gray;
+}
+
+.portfolio-filters button {
+  color: gray;
+  width: 80px;
+  height: 36px;
+  margin: 10px;
+  text-align: center;
+}
+
+.info h3 {
+
+}
+
+.info {
+  max-width: 360px;
+  flex: 1 0 240px;
+  padding-left: 20px;
+}

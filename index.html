@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Karolis Krulis</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
+  <link rel="stylesheet" href="assets/css/gallery.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+  <script src="bundle.js"></script>
+</head>
+
+<body>
+
+  <div class="intro-container">
+    <div class="intro-content-wrapper">
+      <div class="text-wrapper">
+        <div class="name">
+          <h1>KAROLIS KRULIS</h1>
+        </div>
+        <div class="description">
+          <h2>UX Designer and Software Engineer based in New York</h2>
+        </div>
+      </div>
+      <div class="img-wrapper">
+        <img src="assets/images/karolis_port.jpg" alt="Karolis">
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-container">
+    <div class="portfolio-actions">
+      <div class="portfolio-filters">
+        <button type="button" name="button" data-filter=".ui_ux">UI / UX</button>
+        <button type="button" name="button" data-filter=".prog">Programming</button>
+        <button type="button" name="button" data-filter=".design">Design</button>
+        <button type="button" name="button" data-filter=".photo">Design</button>
+      </div>
+    </div>
+
+    <div class="gallery-container" href="bento.html">
+      <div class="mix prog">
+        <img src="assets/images/project-items.png" alt="">
+        <div class="info">
+          <h3>Bentö</h3>
+          <p>Bentö is a web-app clone of the popular design and artwork showcase platform Behance.</p>
+        </div>
+      </div>
+      <div class="mix prog">
+        <img src="assets/images/project-items6.png" alt="">
+        <div class="info">
+          <h3>mimic</h3>
+          <p>mimic is an in-browser game built using Affectiva facial recognition SDK.</p>
+        </div>
+      </div>
+      <div class="mix prog">
+        <img src="assets/images/project-items11.png" alt="">
+        <div class="info">
+          <h3>jerry</h3>
+          <p>jerry is a lightweight JavaScript DOM interaction Library, inspired by JQuery.</p>
+        </div>
+      </div>
+      <div class="mix ui_ux">
+        <img src="assets/images/project-items2.png" alt="">
+        <div class="info">
+          <h3>UX1</h3>
+          <p>Gibberish</p>
+        </div>
+      </div>
+      <div class="mix ui_ux"></div>
+      <div class="mix ui_ux"></div>
+      <div class="mix design"></div>
+      <div class="mix design"></div>
+      <div class="mix design"></div>
+      <div class="mix photo"></div>
+      <div class="mix photo"></div>
+      <div class="mix photo"></div>
+    </div>
+
+
+  </div>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script>
+    const containerEl = document.querySelector('.gallery-container');
+    const mixer = mixitup(containerEl);
+  </script>
+
+</body>
+
+<footer>
+  <span>Karolis Krulis ©</span>
+  <div>
+    <span><a href="mailto:karoliskrulis@gmail.com">EMAIL</a></span>
+    <span>914 218 7064</span>
+    <span><a href="https://github.com/kruulik">GITHUB</a></span>
+  </div>
+</footer>
+
+</html>
