@@ -1,3 +1,5 @@
+@import 'ui';
+
 * {
   box-sizing: border-box;
 }
@@ -12,9 +14,9 @@ span, article, footer, time, small {
   padding: 0;
   border: 0;
   outline: 0;
-  font: font-family: 'Open Sans', sans-serif;
+  font: 100% $font-stack;
   font-size: 14px;
-  color: inherit;
+  color: $black;
   text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
@@ -27,16 +29,16 @@ span, article, footer, time, small {
 
 h1 {
   font-size: 2.827em;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 1.999em;
   font-weight: 400;
 }
 
+h2 {
+  font-size: 1.777em;
+  font-weight: 300;
+}
+
 h3 {
-  font-size: 1.999em;
+  font-size: 1.777em;
   font-weight: 300;
 }
 
@@ -58,8 +60,8 @@ body {
 
 .intro-container {
   height: 100vh;
+  border: 1px solid lightgray; 
   width: 100%;
-  border: 1px solid gray;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,10 +94,13 @@ body {
 }
 
 .text-wrapper {
-  /*float: left;*/
   text-align: right;
   padding: 30px 30px 0 0;
-  width: 300px;
+  width: 340px;
+}
+
+.text-wrapper .name {
+  margin-bottom: 20px;
 }
 
 footer {

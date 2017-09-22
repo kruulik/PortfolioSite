@@ -1,31 +1,29 @@
 const path = require('path');
 
 module.exports = {
-  entry: './frontend/entry.jsx',
+  entry: {
+    main: [
+      'webpack-dev-server/client?http://localhost:8080',
+      './assets/js/main.js',
+    ]
+  },
   output: {
-    filename: './bundle.js',
+    filename: 'public/[name].js',
   },
   module: {
-    rules: [{
-            test: /\.scss$/,
-            use: [{
-                loader: "style-loader" // creates style nodes from JS strings
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS
-            }, {
-                loader: "sass-loader" // compiles Sass to CSS
-            }]
-        }],
     loaders: [
       {
-        test: [/\.jsx?$/],
-        exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'react']
-        }
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+      test: [/\.jsx?$/],
+      exclude: /(node_modules)/,
+      loader: 'babel-loader',
+      query: {
+        presets: 'es2015'
       }
-    ]
+    }]
   },
   devtool: 'source-map',
   resolve: {
