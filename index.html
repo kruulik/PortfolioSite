@@ -9,7 +9,6 @@
   <script src="http://localhost:8080/public/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-  <!-- <script src="bundle.js"></script> -->
 </head>
 
 <body>
@@ -23,21 +22,23 @@
         <div class="description">
           <h2>UX Designer and Web Developer based in New York</h2>
         </div>
+        <div class="info">
+          <button><a href="https://github.com/kruulik"><h5>Github</h5></a></button>
+          <button><a href="assets/Karolis Krulis UX Dev Resume.pdf" download><h5>Resume</h5></a></button>
+        </div>
       </div>
       <div class="img-wrapper">
-        <img src="assets/images/karolis_port.jpg" alt="Karolis">
+        <img src="assets/images/karolis_port2.jpg" alt="Karolis">
       </div>
     </div>
   </div>
 
   <div class="portfolio-container">
     <div class="portfolio-actions">
-
+      <!-- <div class="label-action">
+        <span><h4>Portfolio</h4></span>
+      </div> -->
       <div class="portfolio-filters">
-        <div class="label-action">
-          <span><h4>Portfolio</h4></span>
-        </div>
-
         <button type="button" name="button" data-filter=".prog">Programming</button>
         <button type="button" name="button" data-filter=".ui_ux">UI / UX</button>
         <button type="button" name="button" data-filter=".design">Design</button>
@@ -45,36 +46,50 @@
       </div>
     </div>
 
-    <div class="gallery-container" href="bento.html">
+    <div class="gallery-container">
       <div class="mix prog">
-        <img src="assets/images/project-items.png" alt="">
-        <div class="info">
-          <h3>Bentö</h3>
-          <p>Bentö is a web-app clone of the popular design and artwork showcase platform Behance.</p>
-        </div>
+        <a href="pages/bento.html">
+          <img src="assets/images/project-items.png" alt="">
+          <div class="info">
+            <h3>Bentö</h3>
+            <p>Full-Stack React/Rails web app modeled after Behance</p>
+          </div>
+        </a>
       </div>
       <div class="mix prog">
-        <img src="assets/images/project-items6.png" alt="">
-        <div class="info">
-          <h3>mimic</h3>
-          <p>mimic is an in-browser game built using Affectiva facial recognition SDK.</p>
-        </div>
+        <a href="pages/mimic.html">
+          <img src="assets/images/project-items6.png" alt="">
+          <div class="info">
+            <h3>mimic</h3>
+            <p>Front-End mimic is an in-browser game built using Affectiva facial recognition SDK.</p>
+          </div>
+        </a>
       </div>
       <div class="mix prog">
-        <img src="assets/images/project-items11.png" alt="">
-        <div class="info">
-          <h3>jerry</h3>
-          <p>jerry is a lightweight JavaScript DOM interaction Library, inspired by JQuery.</p>
-        </div>
+        <a href="pages/jerry.html">
+          <img src="assets/images/project-items11.png" alt="">
+          <div class="info">
+            <h3>jerry</h3>
+            <p>jerry is a lightweight JavaScript DOM interaction Library, inspired by JQuery.</p>
+          </div>
+        </a>
       </div>
       <div class="mix ui_ux">
+        <a href="#">
+          <img src="assets/images/project-items2.png" alt="">
+          <div class="info">
+            <h3>Nurse Task Manager</h3>
+            <p>Gibberish</p>
+          </div>
+        </a>
+      </div>
+      <div class="mix ui_ux"><a href="#">
         <img src="assets/images/project-items2.png" alt="">
         <div class="info">
-          <h3>UX1</h3>
+          <h3>Project Expedition</h3>
           <p>Gibberish</p>
         </div>
-      </div>
-      <div class="mix ui_ux"></div>
+      </a></div>
       <div class="mix ui_ux"></div>
       <div class="mix design"></div>
       <div class="mix design"></div>
@@ -95,11 +110,11 @@
 </body>
 
 <footer>
-  <span>Karolis Krulis ©</span>
-  <div>
-    <span><a href="mailto:karoliskrulis@gmail.com">EMAIL</a></span>
-    <span>914 218 7064</span>
-    <span><a href="https://github.com/kruulik">GITHUB</a></span>
+  <span><h6>Karolis Krulis © 2017</h6></span>
+  <div class="contact">
+    <span><a href="mailto:karoliskrulis@gmail.com"><h6>Email</h6></a></span>
+    <span><h6>914 218 7064</h6></span>
+    <span><a href="https://github.com/kruulik"><h6>Github</h6></a></span>
   </div>
 </footer>
 

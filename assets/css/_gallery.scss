@@ -3,12 +3,13 @@
 }
 
 .portfolio-container {
-
+  padding: 40px 7% 40px 7%; 
 }
 
 .label-action {
-  position: relative;
-  bottom: 120px;
+  position: sticky;
+  top: 0px;
+  bottom: 90px;
   left: 30px;
   h4 {
     text-transform: uppercase;
@@ -21,24 +22,26 @@
   content: "";
   position: absolute;
   left: 30px;
-  width: 280px;
+  width: 60px;
   max-width: 720px;
   flex: 1 0 600px;
   height: 60px;
-  border-left: 1px solid gray;
-  border-bottom: 1px solid gray;
+  // border-left: 1px solid gray;
+  // border-bottom: 1px solid gray;
 }
 
 .portfolio-actions {
   padding: 0 4% 0 4%;
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .portfolio-filters {
+  position: sticky;
+  top: 0;
   max-width: 720px;
   flex: 1 0 600px;
+  padding-left: 40px;
 }
 
 .gallery-container .mix {
@@ -51,23 +54,26 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 40px 4% 40px 4%;
+  // padding: 40px 4% 40px 4%;
 }
 
 .mix {
+  a {
+    display: inherit;
+  }
   display: flex;
   flex-wrap: wrap;
 }
 
 .mix img{
   height: 100%;
-  width: 360px;
+  width: 300px;
   border: 1px solid gray;
 }
 
 .portfolio-filters button {
   color: gray;
-  width: 80px;
+  padding: 0 10px 0 10px;
   height: 36px;
   margin: 10px;
   text-align: center;
