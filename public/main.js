@@ -9574,9 +9574,9 @@ function isUndefined(arg) {
 
 /***/ }),
 /* 87 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
+// import '../css/main.scss'
 
 
 /***/ })

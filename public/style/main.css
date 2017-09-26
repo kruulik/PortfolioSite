@@ -80,21 +80,28 @@ h6 {
 p {
   font-size: 1em; }
 
-body {
-  min-width: 100vw; }
-
 button {
-  padding: 10px 15px;
-  border-radius: 1px; }
+  border-radius: 1px;
+  transition: all 100ms linear;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .06em;
+  padding: 0 10px 0 10px;
+  height: 36px;
+  text-align: center; }
 
 button:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-  background: rgba(255, 255, 255, 0.33); }
+  background: rgba(255, 255, 255, 0.33);
+  transition: all 300ms ease-out;
+  color: black; }
+
+button + button {
+  margin-left: 10px; }
 
 .intro-container {
   height: 100vh;
-  padding: 0 7% 0 7%;
-  border: 1px solid lightgray;
   width: 100%;
   display: flex;
   align-items: center;
@@ -113,10 +120,12 @@ button:hover {
     width: 100%; } }
 .img-wrapper {
   max-width: 300px;
-  height: auto; }
+  height: auto;
+  margin-right: 70px; }
 
 .intro-content-wrapper img {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0px 1px 3px rgba(200, 179, 241, 0.28); }
 
 .text-wrapper {
   text-align: right;
@@ -144,44 +153,56 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-
-footer .contact {
-  justify-content: space-between;
-  display: inherit; }
+  footer .contact {
+    justify-content: space-between;
+    display: inherit; }
+    footer .contact span {
+      padding: 5px 10px;
+      margin: 5px; }
 
 .portfolio-container {
-  padding: 40px 7% 40px 7%; }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.label-action {
+.label-wrapper {
   position: sticky;
-  top: 0px;
-  bottom: 90px;
-  left: 30px; }
-  .label-action h4 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1em; }
+  align-self: flex-start;
+  top: 0;
+  z-index: 901;
+  margin-left: 5vw;
+  padding: 5px 4vw;
+  margin-top: -100px;
+  margin-bottom: 30px; }
 
-.label-action:after {
-  content: "";
-  position: absolute;
-  left: 30px;
-  width: 60px;
-  max-width: 720px;
-  flex: 1 0 600px;
-  height: 60px; }
+.portfolio-label h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1em; }
+
+.mixitup-control-active {
+  color: black; }
 
 .portfolio-actions {
-  padding: 0 4% 0 4%;
-  display: flex;
-  justify-content: center; }
+  padding: 0 4vw 0 4vw;
+  flex-shrink: 0;
+  max-width: 720px;
+  position: sticky;
+  top: 0;
+  height: 40px;
+  width: 100vw;
+  z-index: 900;
+  background: rgba(249, 249, 249, 0.8); }
 
 .portfolio-filters {
   position: sticky;
-  top: 0;
+  top: 0; }
+
+.actions-wrapper {
   max-width: 720px;
-  flex: 1 0 600px;
-  padding-left: 40px; }
+  flex: 1 0 600px; }
 
 .gallery-container .mix {
   flex-shrink: 0;
@@ -203,13 +224,6 @@ footer .contact {
   height: 100%;
   width: 300px;
   border: 1px solid gray; }
-
-.portfolio-filters button {
-  color: gray;
-  padding: 0 10px 0 10px;
-  height: 36px;
-  margin: 10px;
-  text-align: center; }
 
 .info {
   max-width: 360px;

@@ -28,6 +28,10 @@ html {
   background: #f9f9f9;
 }
 
+body {
+  // padding: 0 7%;
+}
+
 h1 {
   font-size: 2.827em;
   font-weight: 400;
@@ -69,24 +73,33 @@ p {
   font-size: 1em;
 }
 
-body {
-  min-width: 100vw;
-}
-
 button {
-  padding: 10px 15px;
   border-radius: 1px;
+  transition: all 100ms linear;
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .06em;
+  padding: 0 10px 0 10px;
+  height: 36px;
+  text-align: center;
 }
 
 button:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
   background: rgba(255, 255, 255, 0.33);
+  transition: all 300ms ease-out;
+  color: black;
+}
+
+button + button {
+  margin-left: 10px;
 }
 
 .intro-container {
   height: 100vh;
-  padding: 0 7% 0 7%;
-  border: 1px solid lightgray;
+  // padding: 0 7% 0 7%;
+  // border: 1px solid lightgray;
   width: 100%;
   display: flex;
   align-items: center;
@@ -112,10 +125,12 @@ button:hover {
 .img-wrapper {
   max-width: 300px;
   height: auto;
+  margin-right: 70px;
 }
 
 .intro-content-wrapper img {
   width: 100%;
+  box-shadow: 0px 1px 3px rgba(200, 179, 241, 0.28)
 }
 
 .text-wrapper {
@@ -150,9 +165,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-footer .contact {
-  justify-content: space-between;
-  display: inherit;
+  .contact {
+    justify-content: space-between;
+    display: inherit;
+    span {
+      padding: 5px 10px;
+      margin: 5px;
+    }
+  }
 }
