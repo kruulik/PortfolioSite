@@ -1,10 +1,7 @@
-.gallery-container {
 
-}
 
-.portfolio-container {
-  // padding: 40px 7% 40px 7%;
-  padding-top: 40px;
+#portfolio-container {
+  // margin-top: 40px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -13,17 +10,17 @@
 
 .label-wrapper {
   position: sticky;
-  align-self: flex-start;
   top: 0;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
   z-index: 901;
-  margin-left: 5vw;
-  padding: 5px 4vw;
-  margin-top: -100px;
-  margin-bottom: 30px;
+  margin-top: -60px;
+  margin-right: 30px;
 }
 
 .portfolio-label {
-
   h4 {
     text-transform: uppercase;
     font-weight: 600;
@@ -32,31 +29,29 @@
 }
 
 .mixitup-control-active {
-  color: black; 
+  color: black;
 }
 
 .portfolio-actions {
+  display: flex;
   padding: 0 4vw 0 4vw;
-  // align-items: flex-end;
-  // display: flex;
-  // justify-content: center;
   flex-shrink: 0;
-  max-width: 720px;
+  max-width: 770px;
   position: sticky;
   top: 0;
   height: 40px;
   width: 100vw;
   z-index: 900;
-  background: rgba(249, 249, 249, 0.8);
+  background: rgba(249, 249, 249, 0.85);
 }
 
 .portfolio-filters {
+  display: flex;
+  align-items: center;
   position: sticky;
   top: 0;
-  // max-width: 720px;
-  // width: 100%;
-  // flex: 1 0 600px;
-  // padding-left: 40px;
+  float: right;
+  height: 100%;
 }
 
 .actions-wrapper {
@@ -74,6 +69,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 30px; 
   // padding: 40px 4% 40px 4%;
 }
 
@@ -83,12 +79,18 @@
   }
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .mix img{
   height: 100%;
-  width: 300px;
+  width: 280px;
   border: 1px solid gray;
+}
+
+.mix:hover .info {
+  text-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-out;
 }
 
 .portfolio-filters button {
@@ -104,4 +106,5 @@
   max-width: 360px;
   flex: 1 0 240px;
   padding-left: 20px;
+  transition: all 500ms ease-out;
 }

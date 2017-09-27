@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Karolis Krulis</title>
+  <title>Karolis Krulis | UX Designer and Developer</title>
   <meta name="viewport" content="initial-scale=1">
   <link rel="stylesheet" href="public/style/main.css">
   <script src="http://localhost:8080/public/main.js"></script>
@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <div class="intro-container">
     <div class="intro-content-wrapper">
       <div class="text-wrapper">
@@ -22,7 +21,8 @@
         <div class="description">
           <h2>UX Designer and Web Developer based in New York</h2>
         </div>
-        <div class="info">
+        <div class="links">
+          <button><a href="mailto:karoliskrulis@gmail.com">Email</a></button>
           <button><a href="https://github.com/kruulik" target="_blank">Github</a></button>
           <button><a href="assets/Karolis Krulis UX Dev Resume.pdf" download>Resume</a></button>
         </div>
@@ -33,13 +33,15 @@
     </div>
   </div>
 
-  <div class="portfolio-container">
-    <div class="label-wrapper">
-      <div class="portfolio-label">
-        <span><h4>Portfolio</h4></span>
-      </div>
-    </div>
+  <div id="portfolio-container">
     <div class="portfolio-actions">
+      <div class="label-wrapper">
+        <div class="portfolio-label">
+
+          <button type="button" class="strong-label" data-filter="all">Portfolio</button>
+
+        </div>
+      </div>
       <div class="portfolio-filters">
         <button type="button" name="button" data-filter=".prog">Programming</button>
         <button type="button" name="button" data-filter=".ui_ux">UI / UX</button>
@@ -106,7 +108,11 @@
   <script src="assets/js/mixitup.min.js"></script>
   <script>
     const containerEl = document.querySelector('.gallery-container');
-    const mixer = mixitup(containerEl);
+    const mixer = mixitup(containerEl, {
+      controls: {
+        toggleDefault: 'none'
+      }
+    });
   </script>
 
 </body>

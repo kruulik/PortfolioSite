@@ -35,7 +35,7 @@ span, article, footer, time, small {
   outline: 0;
   font: 100% "Open Sans", sans-serif;
   font-size: 14px;
-  color: #2C2B36;
+  color: inherit;
   text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
@@ -45,6 +45,12 @@ span, article, footer, time, small {
 
 html {
   background: #f9f9f9; }
+
+body {
+  min-height: 100vh; }
+
+strong {
+  font-size: inherit; }
 
 h1 {
   font-size: 2.827em;
@@ -56,7 +62,7 @@ h2 {
 
 h3 {
   font-size: 1.777em;
-  font-weight: 300; }
+  font-weight: 400; }
 
 h4 {
   font-size: 1.414em;
@@ -78,27 +84,29 @@ h6 {
   text-transform: uppercase; }
 
 p {
-  font-size: 1em; }
+  font-size: 1.414em;
+  font-weight: 300; }
 
 button {
   border-radius: 1px;
-  transition: all 100ms linear;
+  transition: all 300ms linear;
   color: gray;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .06em;
-  padding: 0 10px 0 10px;
-  height: 36px;
+  padding: 0 15px 0 15px;
+  height: 40px;
   text-align: center; }
 
 button:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-  background: rgba(255, 255, 255, 0.33);
+  text-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
   transition: all 300ms ease-out;
-  color: black; }
+  color: #2C2B36; }
 
-button + button {
-  margin-left: 10px; }
+button.strong-label {
+  color: #272727;
+  font-weight: 700;
+  letter-spacing: 0.2em; }
 
 .intro-container {
   height: 100vh;
@@ -125,7 +133,8 @@ button + button {
 
 .intro-content-wrapper img {
   width: 100%;
-  box-shadow: 0px 1px 3px rgba(200, 179, 241, 0.28); }
+  box-shadow: 0px 1px 3px rgba(200, 179, 241, 0.28);
+  border-radius: 1px; }
 
 .text-wrapper {
   text-align: right;
@@ -133,14 +142,15 @@ button + button {
   max-width: 400px;
   flex: 1 0 321px; }
   .text-wrapper .description {
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
 
 .text-wrapper .name {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
-.text-wrapper .info {
-  display: inline-flex; }
-  .text-wrapper .info span {
+.text-wrapper .links {
+  display: inline-flex;
+  margin-right: -15px; }
+  .text-wrapper .links span {
     padding: 15px 15px; }
 
 footer {
@@ -160,8 +170,7 @@ footer {
       padding: 5px 10px;
       margin: 5px; }
 
-.portfolio-container {
-  padding-top: 40px;
+#portfolio-container {
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -169,13 +178,14 @@ footer {
 
 .label-wrapper {
   position: sticky;
-  align-self: flex-start;
   top: 0;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
   z-index: 901;
-  margin-left: 5vw;
-  padding: 5px 4vw;
-  margin-top: -100px;
-  margin-bottom: 30px; }
+  margin-top: -60px;
+  margin-right: 30px; }
 
 .portfolio-label h4 {
   text-transform: uppercase;
@@ -186,19 +196,24 @@ footer {
   color: black; }
 
 .portfolio-actions {
+  display: flex;
   padding: 0 4vw 0 4vw;
   flex-shrink: 0;
-  max-width: 720px;
+  max-width: 770px;
   position: sticky;
   top: 0;
   height: 40px;
   width: 100vw;
   z-index: 900;
-  background: rgba(249, 249, 249, 0.8); }
+  background: rgba(249, 249, 249, 0.85); }
 
 .portfolio-filters {
+  display: flex;
+  align-items: center;
   position: sticky;
-  top: 0; }
+  top: 0;
+  float: right;
+  height: 100%; }
 
 .actions-wrapper {
   max-width: 720px;
@@ -212,7 +227,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 30px; }
 
 .mix {
   display: flex;
@@ -222,12 +238,28 @@ footer {
 
 .mix img {
   height: 100%;
-  width: 300px;
+  width: 280px;
   border: 1px solid gray; }
+
+.mix:hover .info {
+  text-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-out; }
 
 .info {
   max-width: 360px;
   flex: 1 0 240px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  transition: all 500ms ease-out; }
+
+.project-wrapper {
+  display: flex;
+  justify-content: center; }
+
+.desc-wrapper {
+  padding: 40px 7%; }
+  .desc-wrapper p {
+    max-width: 800px; }
+  .desc-wrapper button {
+    margin-left: -15px; }
 
 /*# sourceMappingURL=main.css.map */

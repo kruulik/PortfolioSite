@@ -15,7 +15,7 @@ span, article, footer, time, small {
   outline: 0;
   font: 100% $font-stack;
   font-size: 14px;
-  color: $darkest_gray;
+  color: inherit;
   text-align: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
@@ -29,7 +29,11 @@ html {
 }
 
 body {
-  // padding: 0 7%;
+  min-height: 100vh;
+}
+
+strong {
+  font-size: inherit;
 }
 
 h1 {
@@ -44,7 +48,7 @@ h2 {
 
 h3 {
   font-size: 1.777em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h4 {
@@ -70,40 +74,41 @@ h6 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.414em;
+  font-weight: 300;
 }
 
 button {
   border-radius: 1px;
-  transition: all 100ms linear;
+  transition: all 300ms linear;
   color: gray;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .06em;
-  padding: 0 10px 0 10px;
-  height: 36px;
+  padding: 0 15px 0 15px;
+  height: 40px;
   text-align: center;
 }
 
 button:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
-  background: rgba(255, 255, 255, 0.33);
+  text-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
   transition: all 300ms ease-out;
-  color: black;
+  color: $darkest_gray;
 }
 
-button + button {
-  margin-left: 10px;
+button.strong-label {
+  color: #272727;
+  font-weight: 700;
+  letter-spacing: 0.2em;
 }
 
 .intro-container {
   height: 100vh;
-  // padding: 0 7% 0 7%;
-  // border: 1px solid lightgray;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  // border: 1px solid gray;
 }
 
 .intro-content-wrapper {
@@ -130,7 +135,8 @@ button + button {
 
 .intro-content-wrapper img {
   width: 100%;
-  box-shadow: 0px 1px 3px rgba(200, 179, 241, 0.28)
+  box-shadow: 0px 1px 3px rgba(200, 179, 241, 0.28);
+  border-radius: 1px;
 }
 
 .text-wrapper {
@@ -139,17 +145,18 @@ button + button {
   max-width: 400px;
   flex: 1 0 321px;
   .description {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
-
 .text-wrapper .name {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.text-wrapper .info {
+
+.text-wrapper .links {
   display: inline-flex;
+  margin-right: -15px;
   span {
     padding: 15px 15px;
   }

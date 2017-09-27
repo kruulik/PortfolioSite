@@ -1,0 +1,19 @@
+.project-wrapper {
+  display: flex;
+  justify-content: center;
+  // h2 {
+  //   font-size: 1.414em;
+  // }
+}
+
+.desc-wrapper {
+  // max-width: 1200px;
+  padding: 40px 7%;
+  p {
+    max-width: 800px;
+  }
+
+  button {
+    margin-left: -15px; 
+  }
+}
