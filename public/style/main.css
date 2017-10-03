@@ -91,18 +91,19 @@ h6 {
   text-transform: uppercase; }
 
 p {
-  font-size: inherit;
+  font-size: 1.414em;
   font-weight: 300; }
 
 ul li {
   font-weight: 300;
-  font-size: inherit;
+  font-size: 1.414em;
   list-style: disc;
   margin-left: 1.25em; }
 
 ol {
   padding-left: 0; }
   ol li {
+    font-size: 1.414em;
     list-style: inherit;
     margin-left: 1.25em; }
 
@@ -307,6 +308,8 @@ h3 {
   padding: 0 7%; }
   .project-items img {
     padding: 0; }
+  .project-items div {
+    margin-bottom: 30px; }
 
 .item-wrapper {
   box-sizing: border-box;
@@ -349,9 +352,9 @@ h3 {
   .table .qu {
     font-weight: 300;
     font-style: italic; }
-  .table .col p,
-  .table .col ul li {
-    font-size: 1em; }
+
+.col p, .col li {
+  font-size: 1em; }
 
 .table.three {
   grid-template-columns: 1fr 1fr 1fr; }

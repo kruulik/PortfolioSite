@@ -83,13 +83,13 @@ h6 {
 }
 
 p {
-  font-size: inherit;
+  font-size: 1.414em;
   font-weight: 300;
 }
 
 ul li {
   font-weight: 300;
-  font-size: inherit;
+  font-size: 1.414em;
   list-style: disc;
   margin-left: 1.25em;
 }
@@ -97,6 +97,7 @@ ul li {
 ol {
   padding-left: 0;
   li {
+    font-size: 1.414em;
     list-style: inherit;
     margin-left: 1.25em;
   }
