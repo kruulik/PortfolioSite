@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Karolis Krulis | UX Designer and Developer</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="../public/style/main.css">
+  <script src="http://localhost:8080/public/main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+  <div class="project-wrapper container">
+    <span class="home">
+      <button class="strong-label"><a href="/" >HOME</a></button>
+    </span>
+
+    <div class="desc-wrapper">
+      <div class="desc-content">
+        <h1>BlaBlaCar Case Study</h1>
+        <br>
+        <br>
+        <h2>UX / UI, User Research, Process Flow, Wireframing, Sketch, Photoshop, Pen & Paper</h2>
+        <br>
+        <h5>August 2016</h5>
+        <br>
+        <br>
+        <p>BlaBlaCar is the world's leading long distance carpooling service, connecting drivers with empty seats to people travelling the same way.</p>
+        <p>I had the pleasure of working on a case study to redesign their existing search interface with two goals in mind:</p>
+        <br>
+        <p><strong>A: </strong>Keep existing style while improve architecture</p>
+        <p><strong>B: </strong>Find a new visual approach while keeping existing data</p>
+        <br>
+      </div>
+    </div>
+
+    <span class="pr-nav last">
+      <button><a href="" >LAST</a></button>
+    </span>
+    <span class="pr-nav next">
+      <button><a href="" >NEXT</a></button>
+    </span>
+
+    <div class="content-wrapper">
+      <div class="project-items">
+        <div class="text">
+          <h4>Overview</h4>
+          <ul>
+            <li>Overall search is unidirectional and restricting, but simple</li>
+            <li>Results return nearby cities (good), but no way to know proximity to actual destination (bad)</li>
+            <li>
+              Have the feeling I need to envision exactly what I want to book, as a user, rather than allowing the app to guide me</li>
+          </ul>
+          <br>
+          <h4>User Ovservation</h4>
+          <ul>
+            <li>Had no problem with basic search, but was totally lost when asked to book a specific date</li>
+            <li>Did not notice first, nor understand meaning of most icons after they were pointed out (neither did I…)</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div class="table three text">
+          <div class="desc">
+            <h4>User Groups</h4>
+            <p>Highlight of a few very basic personas - just enough to start guiding my design decisions and make sure I am adressing potential outliers as well.</p>
+            <br>
+          </div>
+
+          <div class="col a">
+            <h4>The Rural Commuter</h4>
+            <h4 class="qu">“I need cabbages from the market.”</h4>
+            <p>While not as prominent in Western Europe, expansion into India and Mexio will face more of this user. </p>
+            <br>
+            <ul>
+              <li>Not for leisure</li>
+              <li>Uses app to supplement existing ride-sharing</li>
+              <li>Remote and dispersed destinations (more like regions than single points)</li>
+              <li>Large grocery shopping trips likely</li>
+            </ul>
+          </div>
+          <div class="col b">
+            <h4>The Hitchhiker </h4>
+            <h4 class="qu">“Namaste!”</h4>
+
+            <p>Bay-area yogi that’s totally down to chill and talk about “aura”. Backpacking through EU and sleeping on stranger’s couches.</p>
+            <br>
+            <ul>
+              <li>Multiple one-way stops, no set dates or times</li>
+              <li>Interested in the experience, not the cost</li>
+              <li>“Wanderlust”</li>
+            </ul>
+          </div>
+          <div class="col c">
+            <h4>The Weekender</h4>
+            <h4 class="qu">“I’m bored, let’s go somewhere.”</h4>
+
+            <p>College student who wants to try something new. Little travel experience; no preference for destination</p>
+            <br>
+            <ul>
+              <li>Weekend trip, spur of the moment.</li>
+              <li>First time using the app and trying ride-sharing</li>
+              <li>Indecisive; influenced by popular content</li>
+            </ul>
+          </div>
+          <br><br><br>
+        </div>
+        <br><br>
+        <h3>Content Distribution</h3>
+        <br>
+        <div class="img-captioned right text">
+          <div class="txt">
+            <ul >
+              <li>Information is withheld from the user for the first few screens</li>
+              <li>Progressively more content for user to absorb; bombarded with information by the time they need to book</li>
+            </ul>
+            <br>
+            <p><strong>Goal: </strong>distribute information, so that the user has a chance to make some choices before having to book the trip</p>
+          </div>
+          <img src="../assets/images/blablacar/flow_a.png" alt="BlaBlaCar">
+        </div>
+        <br>
+        <br>
+        <div class="img-captioned left text">
+          <img src="../assets/images/blablacar/flow_b.png" alt="BlaBlaCar">
+          <div class="txt">
+            <p><strong>Goal: </strong>Move some content to fill voids, while removing unnecessary information from the Search > Booking user flow altogether.</p>
+            <p>
+              <br>
+              Design aesthetic is minimally altered, accentuating important details with reduced clutter. </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="table three text">
+          <div class="col a">
+            <img src="../assets/images/blablacar/1.1.png" alt="BlaBlaCar">
+            <ol>
+              <li>Departure Date, Alert, and Filter moved to first screen</li>
+              <li>Recent Searches now includes saved searches. Still only up to 5 rows. </li>
+            </ol>
+          </div>
+          <div class="col b">
+            <img src="../assets/images/blablacar/1.2.png" alt="BlaBlaCar">
+            <ol>
+              <li>Driver preferences now become global filters; removed from individual cells.</li>
+              <li>Cells are now single rows. Departure and Destination are removed as they are now more prominent in the header. Seats Left removed as well (moved to global filters for those users who need to specify).</li>
+            </ol>
+          </div>
+          <div class="col c">
+            <img src="../assets/images/blablacar/1.3.png" alt="BlaBlaCar">
+            <ol>
+              <li>Proximity of arrival city to user’s chosen destination, if not the same (new data).</li>
+              <li>Not shown - driver statement/quote: Should be limited to 3 lines for this screen. Overall limit can be greater, but should exist as expandable content only. </li>
+            </ol>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="table four text">
+          <div class="col a">
+            <img src="../assets/images/blablacar/1.1b.png" alt="BlaBlaCar">
+            <ol>
+              <li>Departure Date set to “Now” by default; results would behave like they do in current app. </li>
+              <li>Recent Search and Saved Search UI taken from Google Material Design.</li>
+            </ol>
+          </div>
+          <div class="col b">
+            <img src="../assets/images/blablacar/1.2b.png" alt="BlaBlaCar">
+            <ol>
+              <li>User has selected a Departure Date (icon opens basic calendar picker UI).</li>
+              <li>Filters - User has made a selection, so icon appears active. </li>
+            </ol>
+          </div>
+          <div class="col c">
+            <img src="../assets/images/blablacar/2.1.png" alt="BlaBlaCar">
+            <ol>
+              <li>Preference icons that were previously used in results. Each represents an active filter. Value-based filters (price, time)  will not have any specific details with the icon.</li>
+              <li>Price and time, grouped and more prominent.</li>
+            </ol>
+          </div>
+          <div class="col d">
+            <img src="../assets/images/blablacar/3.png" alt="BlaBlaCar">
+            <ol>
+              <li>Arrival city, with distance to user’s destination.</li>
+              <li>Driver statement / quote, reduced to 3 lines with option to view more (expands section).</li>
+            </ol>
+          </div>
+        </div>
+        <br><br>
+
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<footer>
+  <span><h6>Karolis Krulis © 2017</h6></span>
+  <div class="contact">
+    <span><a href="https://github.com/kruulik"><h6>Github</h6></a></span>
+    <span><a href="mailto:karoliskrulis@gmail.com"><h6>Email</h6></a></span>
+    <span><h6>914 218 7064</h6></span>
+  </div>
+</footer>
+
+</html>

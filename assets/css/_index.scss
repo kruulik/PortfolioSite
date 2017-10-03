@@ -32,6 +32,11 @@ body {
   min-height: 100vh;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 strong {
   font-size: inherit;
 }
@@ -49,16 +54,20 @@ h2 {
 h3 {
   font-size: 1.777em;
   font-weight: 400;
+  margin: 0.5em 0 ;
 }
 
 h4 {
+  font-weight: 400;
   font-size: 1.414em;
   margin: 5px 0 5px 0;
-  text-transform: uppercase;
+  color: $dark_gray;
+  // text-transform: uppercase;
 }
 
 h5 {
   font-size: 1.333em;
+  color: $light_gray;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -74,8 +83,27 @@ h6 {
 }
 
 p {
-  font-size: 1.414em;
+  font-size: inherit;
   font-weight: 300;
+}
+
+ul li {
+  font-weight: 300;
+  font-size: inherit;
+  list-style: disc;
+  margin-left: 1.25em;
+}
+
+ol {
+  padding-left: 0;
+  li {
+    list-style: inherit;
+    margin-left: 1.25em;
+  }
+}
+
+a {
+  font-weight: inherit;
 }
 
 button {
@@ -163,7 +191,7 @@ button.strong-label {
 }
 
 footer {
-  padding: 0 7% 0 7%;
+  padding: 0 35px;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -176,8 +204,9 @@ footer {
     justify-content: space-between;
     display: inherit;
     span {
-      padding: 5px 10px;
-      margin: 5px;
+      margin-left: 20px;
+      // padding: 5px 10px;
+      // margin: 5px;
     }
   }
 }

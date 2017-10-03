@@ -11,23 +11,52 @@
 </head>
 
 <body>
-  <div class="project-wrapper">
+  <div class="project-wrapper container">
+    <span class="home">
+      <button class="strong-label"><a href="/" >HOME</a></button>
+    </span>
     <div class="desc-wrapper">
-      <h1>Bentö</h1>
-      <br>
-      <br>
-      <h2><strong>Technology:</strong> Rails, React, JavaScript, AWS S3</h2>
-      <br>
-      <h5>August 2017</h5>
-      <br>
-      <p>Bentö is a web-app clone of the popular design and artwork showcase platform Behance. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.JS with a Redux architectural framework on the frontend. Amazon Web Services stores project images and user avatars.</p>
-      <br>
-      <a href="http://www.xn--bent-8qa.com/"><button  type="button" name="button">View it live</button></a>
+      <div class="desc-content">
+        <h1>Bentö</h1>
+        <br>
+        <br>
+        <h2>Rails, React, JavaScript, AWS S3</h2>
+        <br>
+        <h5>August 2017</h5>
+        <br>
+        <p>Bentö is a web-app clone of the popular design and artwork showcase platform Behance. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.JS with a Redux architectural framework on the frontend. Amazon Web Services stores
+          project images and user avatars.</p>
+        <br>
+        <a href="http://www.xn--bent-8qa.com/"><button  type="button" name="button">View it live</button></a>
+        <a href="https://github.com/kruulik/Bento"><button  type="button" name="button">Source Code</button></a>
+      </div>
     </div>
+
+    <span class="pr-nav last">
+      <button><a href="" >LAST</a></button>
+    </span>
+    <span class="pr-nav next">
+      <button><a href="" >NEXT</a></button>
+    </span>
+
     <div class="content-wrapper">
-      <div id="pr-root" class="pr-bento"></div>
+      <div class="project-items">
+
+        <div class="item-wrapper full-width">
+          <img class="full-width" src="../assets/images/bento/home_loggedOut.png" alt="Bento">
+        </div>
+        <div class="item-wrapper full-width">
+          <img class="" src="../assets/images/bento/home_loggedIn.png" alt="Bento">
+        </div>
+        <div class="item-wrapper full-width">
+          <img class="full-width" src="../assets/images/bento/projectShow.png" alt="Bento">
+        </div>
+        <div class="item-wrapper full-width">
+          <img class="full-width" src="../assets/images/bento/userShow.png" alt="Bento">
+        </div>
+      </div>
+
     </div>
-    
   </div>
 </body>
 
