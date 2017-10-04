@@ -137,14 +137,13 @@ button.strong-label {
   display: flex;
   align-items: center;
   justify-content: center;
-  // border: 1px solid gray;
 }
 
 .intro-content-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 4% 0 4%;
+  margin: -20px 4% 0 4%;
 }
 
 @media (max-width: 710px) {
