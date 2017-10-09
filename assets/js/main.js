@@ -12,4 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const sweetScroll = new SweetScroll({ quickMode: true});
 
   mixer.toggleOn('all');
-}, false);
+});
