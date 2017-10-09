@@ -246,11 +246,11 @@ footer {
   margin: 20px; }
 
 .gallery-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+  grid-template-columns: auto [left] 280px [center] 1fr [right] auto; }
 
 .mix {
   display: flex;
@@ -260,7 +260,8 @@ footer {
 
 .mix img {
   height: 100%;
-  width: 280px;
+  grid-column-start: left;
+  grid-column-end: center;
   box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.15);
   border-radius: 2px;
   transition: all 200ms ease-out; }
@@ -273,6 +274,8 @@ footer {
   transition: all 200ms ease-out; }
 
 .info {
+  grid-column-start: center;
+  grid-column-end: right;
   max-width: 360px;
   flex: 1 0 240px;
   padding-left: 20px;
@@ -284,7 +287,7 @@ footer {
   grid-template-rows: 10vh [top] min-content 70vh [main] 20vh [navline] auto [end] 80px; }
 
 .desc-wrapper {
-  padding: 0 7%;
+  padding: 0 70%;
   grid-column-start: left;
   grid-column-end: right;
   grid-row-start: top;

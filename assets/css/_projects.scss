@@ -3,22 +3,24 @@
 .project-wrapper.container {
   display: grid;
   grid-template-columns: [left-bound] 120px [left] auto [right] 120px [right-bound];
-  grid-template-rows: 10vh [top] min-content 70vh [main] 20vh [navline] auto [end] 80px;
+  grid-template-rows: 10vh [top] min-content 70vh [main] calc(20vh + 70px) [navline] auto [end] 80px;
 }
 
 .desc-wrapper {
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 7%;
+  max-width: 1100px;
+  width: 100%;
   grid-column-start: left;
   grid-column-end: right;
   grid-row-start: top;
   grid-row-end: main;
-  display: flex;
-  justify-content: center;
 }
 
 .desc-content {
   a:first-of-type {
-    margin-left: -15px; 
+    margin-left: -15px;
   }
   p {
     max-width: 800px;
@@ -27,6 +29,12 @@
 
 h3 {
   grid-column-start: left;
+}
+
+pre.prettyprint {
+  margin-top: 30px;
+  border: none !important;
+  padding: 0 !important;
 }
 
 .content-wrapper {
@@ -40,6 +48,7 @@ h3 {
 
 .project-items {
   max-width: 1100px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 7%;
@@ -60,31 +69,63 @@ h3 {
 .pr-nav {
   grid-row-start: navline;
   height: 40px;
-  top: calc(50vh - 20px);
+  top: calc(50vh - 30px);
   position: sticky;
   button {
     width: 100%;
     color: $darkest_gray;
   }
+  font-size: 1.5em;
 }
+
+// .pr-nav:before{
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   display: block;
+//   height: 1px;
+//   width: 40px;
+//   background-color: #191919;
+//   pointer-events: none;
+//   user-select: none;
+//   left: -50px;
+// }
+//
+// .pr-nav:after{
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   display: block;
+//   height: 1px;
+//   width: 40px;
+//   background-color: #191919;
+//   pointer-events: none;
+//   user-select: none;
+//   right: -50px;
+// }
 
 .pr-nav.last {
   grid-column-start: left-bound;
   grid-column-end: left;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
 }
 
 .pr-nav.next {
   grid-column-start: right;
   grid-column-end: right-bound;
+  transform: rotate(90deg);
+  transform-origin: bottom;
 }
 
 .home {
   position: sticky;
   top: 10px;
+  left: 10px;
   grid-row-start: top;
   grid-column-start: left-bound;
   grid-column-end: left;
-
+  font-size: 1.5em;
   button {
     width: 100%;
   }

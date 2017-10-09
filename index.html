@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="public/style/main.css">
   <script src="http://localhost:8080/public/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
+<script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
 </head>
 
 <body>
@@ -35,22 +35,23 @@
 
   <div id="portfolio-container">
     <div class="portfolio-actions">
-      <div class="label-wrapper">
+      <!-- <div class="label-wrapper">
         <div class="portfolio-label">
-
           <button type="button" class="strong-label" data-filter="all">Portfolio</button>
-
         </div>
-      </div>
+      </div> -->
       <div class="portfolio-filters">
+        <button type="button" href="#portfolio-container" data-scroll class="label-wrapper strong-label" data-filter="all">Portfolio</button>
+
         <button type="button" name="button" data-filter=".prog">Programming</button>
         <button type="button" name="button" data-filter=".ui_ux">UI / UX</button>
-        <!-- <button type="button" name="button" data-filter=".design">Design</button> -->
-        <!-- <button type="button" name="button" data-filter=".photo">Photography</button> -->
+        <button type="button" name="button" data-filter=".design">Design</button>
+        <button type="button" name="button" data-filter=".photo">Photography</button>
       </div>
     </div>
 
     <div class="gallery-container">
+
       <div class="mix prog">
         <a href="pages/bento.html">
           <img src="assets/images/bento_1.png" alt="">
@@ -60,6 +61,7 @@
           </div>
         </a>
       </div>
+
       <div class="mix prog">
         <a href="pages/mimic.html">
           <img src="assets/images/mimic/mimic_thumb_1.png" alt="">
@@ -69,42 +71,92 @@
           </div>
         </a>
       </div>
+
       <div class="mix prog">
         <a href="pages/jerry.html">
-          <img src="assets/images/project-items11.png" alt="">
+          <img src="assets/images/jerry/jerry_1.png" alt="">
           <div class="info">
             <h3>jerry</h3>
             <p>jerry is a lightweight JavaScript DOM interaction Library, inspired by JQuery.</p>
           </div>
         </a>
       </div>
+
       <div class="mix ui_ux">
         <a href="pages/blablacar.html">
           <img src="assets/images/bla_thumb1.png" alt="">
           <div class="info">
             <h3>BlaBlaCar</h3>
-            <p>UX design case study; redesign search on mobile</p>
+            <p>UX design case study; redesigned mobile search and results</p>
           </div>
         </a>
       </div>
-      <div class="mix ui_ux"><a href="#">
+
+      <div class="mix ui_ux">
+        <a href="pages/project-expedition.html">
         <img src="assets/images/project-items2.png" alt="">
         <div class="info">
           <h3>Project Expedition</h3>
           <p>Gibberish</p>
         </div>
-      </a></div>
-      <div class="mix ui_ux"></div>
-      <div class="mix design"></div>
-      <div class="mix design"></div>
-      <div class="mix design"></div>
-      <div class="mix photo"></div>
-      <div class="mix photo"></div>
-      <div class="mix photo"></div>
+        </a>
+      </div>
+
+      <div class="mix ui_ux">
+        <a href="pages/ntms.html">
+        <img src="assets/images/project-items2.png" alt="">
+        <div class="info">
+          <h3>EHR Case Study</h3>
+          <p>Task management system for nurses and healthcare practitioners</p>
+        </div>
+        </a>
+      </div>
+
+      <div class="mix design">
+        <a href="pages/ga.html">
+        <img src="assets/images/project-items2.png" alt="">
+        <div class="info">
+          <h3>Greenwich Advantage</h3>
+          <p>Branding and logo design for tutoring service</p>
+        </div>
+        </a>
+      </div>
+
+
+      <div class="mix design">
+        <a href="pages/ourvoice.html">
+        <img src="assets/images/project-items2.png" alt="">
+        <div class="info">
+          <h3>Our Voice NYC</h3>
+          <p>Branding and logo design for NYC nonprofit</p>
+        </a>
+        </div>
+      </div>
+
+      <div class="mix photo">
+        <a href="pages/jewelry.html">
+        <img src="assets/images/project-items2.png" alt="">
+        <div class="info">
+          <h3>Jewelry Photography</h3>
+          <p>Product photography and retouching</p>
+        </div>
+        </a>
+      </div>
+
+      <div class="mix photo">
+        <a href="pages/weddings.html">
+        <img src="assets/images/project-items2.png" alt="">
+        <div class="info">
+          <h3>Events</h3>
+          <p>Wedding and event photography</p>
+        </div>
+        </a>
+      </div>
+
     </div>
-
-
   </div>
+</div>
+
   <script src="assets/js/mixitup.min.js"></script>
 </body>
 

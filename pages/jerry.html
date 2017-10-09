@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Karolis Krulis | UX Designer and Developer</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="../public/style/main.css">
+  <script src="http://localhost:8080/public/main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+  <div class="project-wrapper container">
+    <span class="home">
+      <button class="strong-label"><a href="/" >HOME</a></button>
+    </span>
+    <div class="desc-wrapper">
+      <div class="desc-content">
+        <h1>jerry</h1>
+        <br>
+        <br>
+        <h2>JavaScript</h2>
+        <br>
+        <h5>September 2017</h5>
+        <br>
+        <p>jerry is a lightweight JavaScript DOM interaction Library, inspired by JQuery.</p>
+          <br>
+        <p>With this library, a user can:</p>
+        <ul>
+          <li>Traverse and manipulate single or multiple DOM elements</li>
+          <li>Add and remove DOM elements</li>
+          <li>Handle DOM events</li>
+          <li>Make AJAX requests</li>
+        </ul>
+        <br>
+        <a href="https://github.com/kruulik/jerry"><button  type="button" name="button">Source Code</button></a>
+      </div>
+
+    </div>
+
+    <span class="pr-nav last">
+      <button><a href="bento.html" >PREV</a></button>
+    </span>
+    <span class="pr-nav next">
+      <button><a href="jerry.html" >NEXT</a></button>
+    </span>
+
+    <div class="content-wrapper">
+      <div class="project-items">
+        <!-- <img scr="../assets/images/jerry/jerry_1.png"/> -->
+        <h3>DOM Node collection</h3>
+        <p>$j returns an instance of a DOMNodeCollection. If a string is passed as an argument, $j will return a new DOMNodeCollection containing all of the HTML elements on the page that match the argument passed to it. If the argument is a function, or there are multiple functions, these will be stored in a queue, and executed consecutively once the document has fully loaded.</p>
+        <pre class="prettyprint lang-js">
+const DOMNodeCollection = require('./dom_node_collection');
+
+window.$j = $j;
+
+const queue = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log('loaded!');
+  queue.forEach((func) => {
+    func();
+  });
+});
+
+function $j(selector) {
+  let nodeList;
+  if (selector instanceof Function) {
+    if (document.readyState === 'complete') {
+      selector();
+    } else {
+      queue.push(selector);
+    }
+  } else if (selector instanceof HTMLElement) {
+    return new DOMNodeCollection([selector]);
+  } else {
+    nodeList = document.querySelectorAll(selector);
+    return new DOMNodeCollection(Array.from(nodeList));
+  }
+}
+      </pre>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<footer>
+  <span><h6>Karolis Krulis © 2017</h6></span>
+  <div class="contact">
+    <span><a href="https://github.com/kruulik"><h6>Github</h6></a></span>
+    <span><a href="mailto:karoliskrulis@gmail.com"><h6>Email</h6></a></span>
+    <span><h6>914 218 7064</h6></span>
+  </div>
+</footer>
+
+</html>

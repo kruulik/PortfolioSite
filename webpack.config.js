@@ -1,41 +1,30 @@
-const path = require('path');
-
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-const extractScss = new ExtractTextPlugin({
-  filename: "public/style/[name].css",
-  disable: process.env.NODE_ENV === "development"
-});
-
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: {
-    main: [
-      'webpack-dev-server/client?http://localhost:8080',
-      './assets/js/main.js',
-    ]
-  },
+  entry: './assets/js/main.js',
   output: {
-    filename: 'public/[name].js',
+    // publicPath: '/public/',
+    filename: 'public/[name].js'
   },
   module: {
-    rules: [{
-      test: /\.scss$/,
-      use: extractScss.extract({
-        use: [{
-          loader: "css-loader"
-        }, {
-          loader: "sass-loader"
-        }],
-        fallback: "style-loader"
-      })
-    }]
+    loaders: [
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract({
+          use: [{
+            loader: "css-loader"
+          }, {
+            loader: "sass-loader"
+          }],
+          fallback: "style-loader"
+        })
+      }
+    ]
   },
   plugins: [
-        extractScss
+    new ExtractTextPlugin("./public/style/main.css")
   ],
-  devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '*']
+    extensions: ['.js', '.jsx', '*', '.css', '.scss']
   }
 };
