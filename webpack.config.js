@@ -3,9 +3,8 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: './assets/js/main.js',
   output: {
-    // publicPath: '/public/',
     filename: 'main.js',
-    path: './public'
+    path: '/public/'
   },
   module: {
     loaders: [
