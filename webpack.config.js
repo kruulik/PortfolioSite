@@ -4,7 +4,8 @@ module.exports = {
   entry: './assets/js/main.js',
   output: {
     // publicPath: '/public/',
-    filename: 'public/[name].js'
+    filename: 'main.js',
+    path: './public'
   },
   module: {
     loaders: [
