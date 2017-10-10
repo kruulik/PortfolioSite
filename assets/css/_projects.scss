@@ -60,12 +60,16 @@ pre.prettyprint {
   }
 }
 
-.item-wrapper {
+.item-wrapper img {
   box-sizing: border-box;
-  // margin: 40px;
   box-shadow: 0 1px 3px rgba(200, 179, 241, 0.28);
 }
 
+.item-wrapper.medium {
+  max-width: 60%;
+  
+  margin-right: auto;
+}
 .pr-nav {
   grid-row-start: navline;
   height: 40px;
