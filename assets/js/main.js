@@ -1,8 +1,6 @@
 
 const mixitup = require('mixitup');
 const SweetScroll = require('sweet-scroll');
-// import SweetScroll from "sweet-scroll";
-// import mixitup from 'mixitup';
 
 document.addEventListener("DOMContentLoaded", () => {
   const containerEl = document.querySelector('.gallery-container');
