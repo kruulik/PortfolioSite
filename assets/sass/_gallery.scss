@@ -107,6 +107,29 @@
 @media (max-width: 560px) {
   .info {
     padding-left: 0;
-    flex-grow: 0; 
+    flex-grow: 0;
+  }
+  .portfolio-actions {
+    display: none;
+  }
+  .intro-content-wrapper {
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 752px) {
+  .intro-content-wrapper {
+    margin: -20px 50% 0 50%;
+    .img-wrapper {
+      margin: 0;
+    }
+  }
+  .text-wrapper {
+    padding: 0px;
+    width: 300px; 
+    text-align: left;
+    flex: none;
+    margin: 0;
   }
 }
