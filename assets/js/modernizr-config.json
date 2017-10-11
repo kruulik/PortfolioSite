@@ -3,5 +3,9 @@
   "options": [
     "setClasses"
   ],
-  "feature-detects": []
+  "feature-detects": [
+    "test/css/cssgrid",
+    "test/css/flexbox",
+    "test/css/positionsticky"
+  ]
 }
