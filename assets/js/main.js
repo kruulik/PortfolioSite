@@ -1,9 +1,8 @@
-import '../css/main.scss';
 
-import Project from './projects';
-import Nav from './nav';
-import SweetScroll from "sweet-scroll";
-
+const mixitup = require('mixitup');
+const SweetScroll = require('sweet-scroll');
+// import SweetScroll from "sweet-scroll";
+// import mixitup from 'mixitup';
 
 document.addEventListener("DOMContentLoaded", () => {
   const containerEl = document.querySelector('.gallery-container');

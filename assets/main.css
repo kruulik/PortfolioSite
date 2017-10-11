@@ -108,9 +108,11 @@ ol {
     margin-left: 1.25em; }
 
 a {
-  font-weight: inherit; }
+  font-weight: inherit;
+  font-size: inherit; }
 
 button {
+  white-space: nowrap;
   border-radius: 1px;
   transition: all 300ms linear;
   color: gray;
@@ -119,15 +121,18 @@ button {
   letter-spacing: .06em;
   padding: 0 15px 0 15px;
   height: 40px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: inherit;
+  font-weight: 700; }
 
 button:hover {
-  text-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
   transition: all 300ms ease-out;
   color: #2C2B36; }
 
 button.strong-label {
-  color: #272727;
   font-weight: 700;
   letter-spacing: 0.2em; }
 
@@ -196,7 +201,8 @@ footer {
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: 100%; }
 
 .label-wrapper {
   position: sticky;
@@ -206,25 +212,19 @@ footer {
   display: flex;
   align-items: center;
   z-index: 901;
-  margin-top: -80px;
-  margin-right: 30px; }
-
-.portfolio-label h4 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1em; }
+  margin-top: -200px; }
 
 .mixitup-control-active {
   color: black; }
 
 .portfolio-actions {
   display: flex;
+  justify-content: center;
   padding: 0 4vw 0 4vw;
   flex-shrink: 0;
-  max-width: 770px;
   position: sticky;
   top: 0;
-  height: 40px;
+  height: 80px;
   width: 100vw;
   z-index: 900;
   background: rgba(249, 249, 249, 0.85); }
@@ -242,15 +242,12 @@ footer {
   flex: 1 0 600px; }
 
 .gallery-container .mix {
-  flex-shrink: 0;
+  flex: 1 0 auto;
   margin: 20px; }
 
 .gallery-container {
-  margin-top: 30px;
-  display: grid;
-  justify-content: center;
-  grid-gap: 20px;
-  grid-template-columns: auto [left] 280px [center] 1fr [right] auto; }
+  min-height: 100%;
+  margin-top: 30px; }
 
 .mix {
   display: flex;
@@ -259,9 +256,10 @@ footer {
     display: inherit; }
 
 .mix img {
+  flex: 0 1 auto;
   height: 100%;
-  grid-column-start: left;
-  grid-column-end: center;
+  width: 280px;
+  border: 1px solid #b7b7b7;
   box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.15);
   border-radius: 2px;
   transition: all 200ms ease-out; }
@@ -284,16 +282,18 @@ footer {
 .project-wrapper.container {
   display: grid;
   grid-template-columns: [left-bound] 120px [left] auto [right] 120px [right-bound];
-  grid-template-rows: 10vh [top] min-content 70vh [main] 20vh [navline] auto [end] 80px; }
+  grid-template-rows: 10vh [top] min-content 70vh [main] calc(20vh + 70px) [navline] auto [end] 80px; }
 
 .desc-wrapper {
-  padding: 0 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 7%;
+  max-width: 1100px;
+  width: 100%;
   grid-column-start: left;
   grid-column-end: right;
   grid-row-start: top;
-  grid-row-end: main;
-  display: flex;
-  justify-content: center; }
+  grid-row-end: main; }
 
 .desc-content a:first-of-type {
   margin-left: -15px; }
@@ -302,6 +302,11 @@ footer {
 
 h3 {
   grid-column-start: left; }
+
+pre.prettyprint {
+  margin-top: 30px;
+  border: none !important;
+  padding: 0 !important; }
 
 .content-wrapper {
   grid-column-start: left;
@@ -313,6 +318,7 @@ h3 {
 
 .project-items {
   max-width: 1100px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 7%; }
@@ -321,33 +327,44 @@ h3 {
   .project-items div {
     margin-bottom: 30px; }
 
-.item-wrapper {
+.item-wrapper img {
   box-sizing: border-box;
   box-shadow: 0 1px 3px rgba(200, 179, 241, 0.28); }
+
+.item-wrapper.medium {
+  max-width: 60%;
+  margin-right: auto; }
 
 .pr-nav {
   grid-row-start: navline;
   height: 40px;
-  top: calc(50vh - 20px);
-  position: sticky; }
+  top: calc(50vh - 30px);
+  position: sticky;
+  font-size: 1.5em; }
   .pr-nav button {
     width: 100%;
     color: #2C2B36; }
 
 .pr-nav.last {
   grid-column-start: left-bound;
-  grid-column-end: left; }
+  grid-column-end: left;
+  transform: rotate(-90deg);
+  transform-origin: bottom; }
 
 .pr-nav.next {
   grid-column-start: right;
-  grid-column-end: right-bound; }
+  grid-column-end: right-bound;
+  transform: rotate(90deg);
+  transform-origin: bottom; }
 
 .home {
   position: sticky;
   top: 10px;
+  left: 10px;
   grid-row-start: top;
   grid-column-start: left-bound;
-  grid-column-end: left; }
+  grid-column-end: left;
+  font-size: 1.5em; }
   .home button {
     width: 100%; }
 

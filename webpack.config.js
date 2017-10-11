@@ -4,7 +4,7 @@ module.exports = {
   entry: './assets/js/main.js',
   output: {
     filename: 'main.js',
-    path: '/public/'
+    path: '/dist'
   },
   module: {
     loaders: [
@@ -20,6 +20,9 @@ module.exports = {
         })
       }
     ]
+  },
+  devServer: {
+    contentBase: '/dist'
   },
   plugins: [
     new ExtractTextPlugin("./public/style/main.css")
