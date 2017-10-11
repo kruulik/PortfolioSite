@@ -33,11 +33,13 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
+    "autoprefixer": "^7.1.5",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "html-webpack-plugin": "^2.30.1",
     "lodash": "^4.17.4",
+    "postcss-cli": "^4.1.1",
     "simple-autoreload-server": "^0.2.7",
     "sweet-scroll": "^2.2.1"
   }
