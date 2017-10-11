@@ -63,7 +63,7 @@
   a {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -99,7 +99,14 @@
   grid-column-start: center;
   grid-column-end: right;
   max-width: 360px;
-  flex: 1 0 240px;
+  flex: 1 0 280px;
   padding-left: 20px;
   transition: all 500ms ease-out;
+}
+
+@media (max-width: 560px) {
+  .info {
+    padding-left: 0;
+    flex-grow: 0; 
+  }
 }
