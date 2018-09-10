@@ -149,6 +149,15 @@ button.large {
   justify-content: center;
 }
 
+.h2-link {
+  color: #5fe8cdb5;
+  transition: all .2s linear;
+}
+
+.h2-link:hover {
+  text-shadow: 0 2px 4px rgba(170,240,226,.6);
+}
+
 .intro-content-wrapper {
   display: flex;
   justify-content: center;
